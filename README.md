@@ -17,11 +17,11 @@ Installation
 ##### Vertica drivers:
 
 ```shell
-# Download official Vertica ODBC driver
-curl -OL http://www.vertica.com/client_drivers/9.1.x/9.1.1-0/vertica-client-9.1.1-0.x86_64.tar.gz
+# Download official Vertica ODBC driver - atler the version according to your Vertica server
+curl -OL https://www.vertica.com/client_drivers/11.0.x/11.0.2-0/vertica-client-11.0.2-0.x86_64.tar.gz
 
 # Extract & install it
-sudo tar -xvzf vertica-client-9.1.1-0.x86_64.tar.gz -C /
+sudo tar -xvzf vertica-client-11.0.2-0.x86_64.tar.gz -C /
 
 # Set config files
 sudo printf "[VerticaDev]\nDriver = /opt/vertica/lib64/libverticaodbc.so\nPort = 5433\nDriver = Vertica" > /etc/odbc.ini
